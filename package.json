@@ -1,0 +1,16 @@
+{
+  "name": "discordjs/memes",
+  "version": "1.0.8",
+  "description": "A powerful module to generate different types of memes in spanish",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "discord.js-memes": "^1.0.0"
+  }
+}
