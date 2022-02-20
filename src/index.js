@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 function totalmemes() { 
   let memes =
     [
-        "https://imagenes.20minutos.es/files/article_amp/uploads/imagenes/2021/12/24/imperdibles-memes-para-compartir-por-whatsapp-en-navidad.jpeg",
+        
         "https://okdiario.com/diariomadridista/img/2022/02/15/memes-655x368.jpg",
         "http://cdn2.upsocl.com/wp-content/uploads/2017/10/1590f80982a9ebeba212575f6b611cc8.jpg",
         "https://ep01.epimg.net/verne/imagenes/2020/09/08/articulo/1599564224_241757_1599576767_sumario_normal.jpg",
