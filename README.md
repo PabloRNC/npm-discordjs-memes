@@ -1,7 +1,7 @@
 # DISCORD.JS-MEMES
 This is a powerful module that allows you to generates randomly memes, to start this porcess you have to type in your shell:
 ```yarn
-npm i discordjs/memes
+npm i discord.js-memes
 ```
 Then you have to put in your command a constant called meme and require this npm like this: 
 ```js
