@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 const meme = meme => {
 
 
-function totalmemes() { 
+function total() { 
   let memes =
     [
         
@@ -54,7 +54,7 @@ function cinema(){
     return pmemes[Math.floor(Math.random() * pmemes.length)]
 }
 
-function famousmemes() {
+function famous() {
     let fmemes =  [
         "https://images.mediotiempo.com/tQB7GcF0mgF8h2mtAUkRmaOxDTk=/958x596/uploads/media/2020/12/13/pese-ano-dificil-recordemos-memes.jpg",
         "https://cnnespanol.cnn.com/wp-content/uploads/2016/09/meme-famosos.jpg?quality=100&strip=info&w=320&h=240&crop=1",

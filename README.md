@@ -9,18 +9,25 @@ const meme = require("discord.js-memes")
 ```
 To finish if you want to generate a random meme just type this in your commmand: 
 ```js
+const Discord = require("discord.js")
 const meme = require("discord.js-meme")
 
-const total = meme.totalmemes() //generates a meme randomly
+const total = meme.total() //generates a random meme
 
-message.channel.send(total)
+const embed = new Discord.MessageEmbed()
+.setTitle("MEME")
+.setImage(total)
+.setFooter({text: "Powered by discord.js-memes"})
+
+message.channel.send({embeds: [embed]})
 
 ```
 There are more types of memes: 
 ```js
 
-const total = meme.totalmemes() //for all the memes
+const total = meme.total() //for all the memes
 const cinemamemes = meme.cinema() //for cinema memes
+const famousmemes = meme.famous() //for famous people memes
 //Coming soon more types
 ```
 If you want to report an issue or a bug you can go to this GitHub link and report it you can [clik here](https://github.com/PabloRNC/npm-discordjs-memes/issues)
