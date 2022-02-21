@@ -8,19 +8,15 @@ const Discord = require("discord.js")
             this.type = type
         }
 
-        set setType(valor)  {
-          this.type = valor
-        }
-
-        get Type(){
-            return this.type
-            
+        setType(types) {
+            this.type = types
+            if(types === 3){
+               return total()
+            }
         }
         
     }
-if(Meme.Type === 3){
-    return total()
-}
+
 function total() { 
   let memes =
     [
