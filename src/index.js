@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-const meme = Meme => {
+
     
     class Meme {
         constructor(type) {
@@ -94,8 +94,11 @@ function famous() {
 }
 
 
-}
+
 module.exports = {
-    meme
+    Meme,
+    total,
+    cinema,
+    famous
 }
 
