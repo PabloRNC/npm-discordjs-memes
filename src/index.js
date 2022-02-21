@@ -14,9 +14,13 @@ const Discord = require("discord.js")
 
         get Type(){
             return this.type
+            
         }
+        
     }
-
+if(Meme.Type === 3){
+    return total()
+}
 function total() { 
   let memes =
     [
