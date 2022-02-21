@@ -3,19 +3,7 @@ const Discord = require("discord.js")
 
     
     
-    class Meme {
-        constructor(type) {
-            this.type = type
-        }
-
-        setType(types) {
-            this.type = types
-            if(types === 3){
-               return total()
-            }
-        }
-        
-    }
+const meme = meme => {
 
 function total() { 
   let memes =
@@ -91,8 +79,8 @@ function famous() {
 }
 
     
-
+}
 module.exports = {
-    Meme
+    meme
 }
 
