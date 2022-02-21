@@ -1,8 +1,27 @@
 const Discord = require("discord.js")
 
 const meme = meme => {
+    
+    class Meme {
+        constructor(type) {
+            this.type = type
+        }
 
+        set setType(valor)  {
+          this.type = valor
+        }
 
+        get Type(){
+            return this.type
+        }
+    }
+
+const meme = new Meme()
+.setType(3)
+
+if(Meme.Type === 3){
+    return total()
+}
 function total() { 
   let memes =
     [
