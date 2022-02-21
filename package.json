@@ -1,6 +1,6 @@
 {
   "name": "discord.js-memes",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A powerful moduleto generate random memes in spanish",
   "main": "src/index.js",
   "dependencies": {
