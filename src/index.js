@@ -1,8 +1,7 @@
 const Discord = require("discord.js")
 
-const meme = meme => {
-    
-    
+
+
 
 function total() { 
   let memes =
@@ -93,9 +92,12 @@ function famous() {
 
 
 
+
+
 module.exports = {
-    meme
+    total,
+    famous,
+    cinema
     
 }
 
-}
