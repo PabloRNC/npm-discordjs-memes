@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 
     
-    const djsmemes = djsmemes => {
+    
     class Meme {
         constructor(type) {
             this.type = type
@@ -17,10 +17,6 @@ const Discord = require("discord.js")
         }
     }
 
-
-if(Meme.Type === 3){
-    return total()
-}
 function total() { 
   let memes =
     [
@@ -94,9 +90,9 @@ function famous() {
     return fmemes[Math.floor(Math.random() * fmemes.length)]
 }
 
-    }
+    
 
 module.exports = {
-    djsmemes
+    Meme
 }
 
