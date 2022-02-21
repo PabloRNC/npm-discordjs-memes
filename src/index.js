@@ -1,9 +1,8 @@
 const Discord = require("discord.js")
 
-
-    
-    
 const meme = meme => {
+    
+    
 
 function total() { 
   let memes =
@@ -92,9 +91,11 @@ function famous() {
     return fmemes[Math.floor(Math.random() * fmemes.length)]
 }
 
-    
-}
+
+
 module.exports = {
     meme
+    
 }
 
+}
