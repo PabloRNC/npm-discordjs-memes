@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-const meme = meme => {
+const meme = Meme => {
     
     class Meme {
         constructor(type) {
@@ -16,8 +16,6 @@ const meme = meme => {
         }
     }
 
-const meme = new Meme()
-.setType(3)
 
 if(Meme.Type === 3){
     return total()
