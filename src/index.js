@@ -1,6 +1,45 @@
 const Discord = require("discord.js")
 
 
+class Meme {
+    constructor(_type){
+        this.setType(_type)
+    }
+
+    setType(_type){
+
+        if(!_type){ 
+
+            throw new Error("[DISCORD.JS-MEMES] NO TYPE OF MEME WAS PROVIDED: You have to provide a type of meme to send")
+    
+           } 
+
+       else if( type !== 1 || _type !== 2 || _type !== 3){
+
+            throw new Error(`[DISCORD.JS-MEMES] INVALID TYPE OF MEME: You provide an invalid type of meme (provided: ${_type})`)
+               }
+
+
+               
+
+
+       if(_type === 1){
+           return total()
+       }
+       if(_type === 2){
+           return famous()
+       }
+       if(_type === 3){
+           return cinema()
+       }
+
+       
+
+        
+    
+}
+}
+
 
 
 function total() { 
@@ -97,7 +136,8 @@ function famous() {
 module.exports = {
     total,
     famous,
-    cinema
+    cinema,
+    Meme
     
 }
 
