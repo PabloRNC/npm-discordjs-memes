@@ -14,7 +14,7 @@ class Meme {
     
            } 
 
-       else if( type !== 1 || _type !== 2 || _type !== 3){
+       else if( type !== 1 && _type !== 2 && _type !== 3){
 
             throw new Error(`[DISCORD.JS-MEMES] INVALID TYPE OF MEME: You provide an invalid type of meme (provided: ${_type})`)
                }
