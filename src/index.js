@@ -8,29 +8,20 @@ class Meme {
 
     setType(_type){
 
-        if(!_type){ 
-
-            throw new Error("[DISCORD.JS-MEMES] NO TYPE OF MEME WAS PROVIDED: You have to provide a type of meme to send")
-    
-           } 
-
-       else if( type !== 1 && _type !== 2 && _type !== 3){
-
-            throw new Error(`[DISCORD.JS-MEMES] INVALID TYPE OF MEME: You provide an invalid type of meme (provided: ${_type})`)
-               }
-
-
-               
-
+        
 
        if(_type === 1){
            return total()
-       }
+       } else
        if(_type === 2){
            return famous()
-       }
+       } else
        if(_type === 3){
            return cinema()
+       
+       }
+       if(_type && _type !== 1 && 2 && 3){
+           throw new Error("[DISCORD.JS-MEMES] INVALID TYPE OF MEME WAS PROVIDED: You provide an invalid type of meme")
        }
 
        
