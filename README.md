@@ -12,13 +12,13 @@ To finish if you want to generate a random meme just type this in your commmand:
 const Discord = require("discord.js")
 const meme = require("discord.js-meme")
 
-const total = new meme.Meme()
+const all = new meme.Meme()
 .setType(1)
- //generates a random meme
+ //generates a random meme in spanish or english
 
 const embed = new Discord.MessageEmbed()
 .setTitle("MEME")
-.setImage(total)
+.setImage(all)
 .setFooter({text: "Powered by discord.js-memes"})
 
 message.channel.send({embeds: [embed]})
@@ -27,17 +27,24 @@ message.channel.send({embeds: [embed]})
 There are more types of memes: 
 ```js
 
+const all = new meme.Meme()
+.setType(1) //for all the memes in spanish or english
+
 const total = new meme.Meme()
-.setType(1) //for all the memes
+.setType(2) //for all the memes only in spanish
 
 const famousmemes = new meme.Meme()
-.setType(2) //for famous people memes
+.setType(3) //for famous people memes in spanish
 
 const cinemamemes = new meme.Meme()
-.setType(3) //for cinema memes
-//Coming soon more types
+.setType(4) //for cinema memes in spanish
+
+const english = new meme.Meme()
+.setType(5) //for only english memes
+
+//Coming soon more types and new type of memes in english
 ```
-If you want to report an issue or a bug you can go to this GitHub link and report it you can [clik here](https://github.com/PabloRNC/npm-discordjs-memes/issues)
+If you want to report an issue or a bug you can go to this GitHub link and report it you can [clik here](https://github.com/PabloRNC/npm-discordjs-memes/issues) to report it and I will fixed as fast as I can
 
 
 
