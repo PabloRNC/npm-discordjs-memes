@@ -10,11 +10,11 @@ const meme = require("discord.js-memes")
 To finish if you want to generate a random meme just type this in your commmand: 
 ```js
 const Discord = require("discord.js")
-const meme = require("discord.js-meme")
+const {eMeme, sMeme, all} = require("discord.js-memes")
 
-const all = new meme.Meme()
+const all = new sMeme()
 .setType(1)
- //generates a random meme in spanish or english
+ //generates a random meme in spanish
 
 const embed = new Discord.MessageEmbed()
 .setTitle("MEME")
@@ -26,23 +26,24 @@ message.channel.send({embeds: [embed]})
 ```
 There are more types of memes: 
 ```js
+const total = new sMeme()
+.setType(1) //for all the memes only in spanish
 
-const all = new meme.Meme()
-.setType(1) //for all the memes in spanish or english
+const famousmemes = new sMeme()
+.setType(2) //for famous people memes in spanish
 
-const total = new meme.Meme()
-.setType(2) //for all the memes only in spanish
+const cinemamemes = new sMeme()
+.setType(3) //for cinema memes in spanish
 
-const famousmemes = new meme.Meme()
-.setType(3) //for famous people memes in spanish
+const english = new eMeme()
+.setType(1) //for all the english memes
 
-const cinemamemes = new meme.Meme()
-.setType(4) //for cinema memes in spanish
+const efamous = new eMeme()
+.setType(2) //for only memes about famous people in english
 
-const english = new meme.Meme()
-.setType(5) //for only english memes
+const allmemes = all() //for all the memes of this module in spanish or in english
 
-//Coming soon more types and new type of memes in english
+//Coming soon more types of memes and new types of memes in english
 ```
 If you want to report an issue or a bug you can go to this GitHub link and report it you can [clik here](https://github.com/PabloRNC/npm-discordjs-memes/issues) to report it and I will fixed as fast as I can
 

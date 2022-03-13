@@ -4,45 +4,87 @@ const famous = require("../functions/famous")
 const cinema = require("../functions/cinema")
 const english = require("../functions/english")
 const all = require("../functions/allmemes")
+const efamous = require("../functions/efamous")
 
 
-class Meme {
+class sMeme {
     constructor(_type){
-        this.setType(_type)
+        
+       
     }
+   
 
+        
+    
     setType(_type){
+        
+        switch(_type){
+            case 1: {
+                return etotal()
+            }
+            break;
+            case 2:{
+                return famous()
+            }
+            break;
+            case 3: {
+                return cinema()
+            }
+            break;
+            
+        }
+
+        if(_type && _type !== 1&&2&&3){
+            throw new Error(`[DISCORD.JS-MEMES] INVALID TYPE OF MEME WAS PROVIDED: You provide an invalid type of meme. Reading(${_type})`)
+        }
+
+        if(!_type){
+            throw new Error("[DISCORD.JS-MEMES] NO TYPE OF MEME WAS PROVIDED: You did not provide a type of meme")
+        }
 
         
-       if(_type === 1){
-         return all()
-       }else
-       if(_type === 2){
-           return etotal()
-       } else
-       if(_type === 3){
-           return famous()
-       } else
-       if(_type === 4){
-           return cinema()
        
-       }else
-       if(_type === 5){
-           return english()
-       }
-       if(_type && _type !== 1 && 2 && 3){
-           throw new Error("[DISCORD.JS-MEMES] INVALID TYPE OF MEME WAS PROVIDED: You provide an invalid type of meme")
-       }
-
-       
-
+      
         
+
+       
+
+            
     
 }
 }
 
 
+class eMeme{
+    constructor(_type){
+        
+    }
 
+    setType(_type){
+    
+        
+      switch(_type){
+          case 1:{
+              return english()
+          }
+          break;
+          case 2: {
+              return efamous()
+          }
+          break;
+     
+      }
+
+      
+      if(_type && _type !== 1&&2){
+        throw new Error(`[DISCORD.JS-MEMES] INVALID TYPE OF MEME WAS PROVIDED: You provide an invalid type of meme. Reading(${_type})`)
+      }
+      if(!_type){
+        throw new Error("[DISCORD.JS-MEMES] NO TYPE OF MEME WAS PROVIDED: You did not provide a type of meme")
+      }
+      
+        }
+}
 
 
 
@@ -53,7 +95,10 @@ class Meme {
 
 
 module.exports = {
-    Meme
+    sMeme,
+    eMeme,
+    all
+
     
 }
 

@@ -1,11 +1,12 @@
 {
   "name": "discord.js-memes",
-  "version": "2.4.5",
+  "version": "2.5.0",
   "description": "A powerful module to generate random memes in spanish",
   "main": "src/index.js",
   "dependencies": {
     "discord-modals": "^1.2.3",
-    "discord.js": "^13.6.0"
+    "discord.js": "^13.6.0",
+    "ffmpeg": "^0.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
